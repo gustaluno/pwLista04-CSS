@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+<meta charset="UTF-8">
+<meta name="author" content="Seu Nome Completo">
+<meta name="keywords" content="web, número de matrícula, Atividades sobre CSS">
+<title>CSS - Atividade 3</title>
+<style>
+  body {
+    font-family: Arial, sans-serif;
+  }
+
+  form {
+    width: 300px;
+    margin: 0 auto;
+  }
+
+  label {
+    display: block;
+    margin-bottom: 5px;
+    font-weight: bold;
+  }
+
+  input[type="text"],
+  select,
+  textarea {
+    width: 100%;
+    padding: 8px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+  }
+
+  select {
+    height: 30px;
+  }
+
+  textarea {
+    resize: vertical;
+  }
+
+  input[type="submit"] {
+    background-color: #4CAF50;
+    color: white;
+    padding: 10px 15px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+  }
+
+  input[type="submit"]:hover {
+    background-color: #45a049;
+  }
+</style>
+</head>
+<body>
+  <h1>CSS - Atividade 3</h1>
+  <form>
+    <label for="nome">Nome:</label>
+    <input type="text" id="nome" name="nome" placeholder="Digite seu nome">
+
+    <label for="email">E-mail:</label>
+    <input type="text" id="email" name="email" placeholder="Digite seu e-mail">
+
+    <label for="sexo">Sexo:</label>
+    <select id="sexo" name="sexo">
+      <option value="masculino">Masculino</option>
+      <option value="feminino">Feminino</option>
+      <option value="outro">Outro</option>
+    </select>
+
+    <label for="mensagem">Mensagem:</label>
+    <textarea id="mensagem" name="mensagem" rows="4" placeholder="Digite sua mensagem"></textarea>
+
+    <input type="submit" value="Enviar">
+  </form>
+</body>
+</html>
